@@ -39,7 +39,7 @@ try:
 
     def parse_datetime(datetime_string):
         try:
-            return ciso8601.parse_datetime_as_naive(datetime_string)
+            return ciso8601.parse_datetime(datetime_string)
         except ValueError:
             return
 except ImportError:
